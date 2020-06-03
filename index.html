@@ -12,7 +12,15 @@
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <select name="priority" id="priority">
+        <option value="high">high</option>
+        <option value="medium">medium</option>
+        <option value="low">low</option></select>
+      <div id='edit-div'>
+      </div>
       <input type="submit" value="Create New Task">
+      <input type="button" value="delete task" id="deleter">
+      <input type="button" value="Prorcastinate" id="slack">
     </form>
 
     <div id="list">
